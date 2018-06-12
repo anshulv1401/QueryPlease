@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main_activities.HomeFragment"
+    android:padding="16dp"
+    android:background="@drawable/user_bg"
+    >
+    <FrameLayout
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </FrameLayout>
+
+
+</FrameLayout>

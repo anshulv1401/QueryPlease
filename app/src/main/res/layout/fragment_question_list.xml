@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff9f9f9"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:padding="16dp"
+    >
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/listQueSubjectImg"
+        android:src="@drawable/android"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question asdf dsa fsadf asdf asdf asdf asdf asdf asdf a"
+        android:id="@+id/QuestionText"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/listQueSubjectImg"
+        android:layout_toStartOf="@+id/listQueStatusImg"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_marginBottom="2dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="27/07/16"
+        android:id="@+id/listQueDate"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/QuestionText"
+        android:layout_toStartOf="@+id/listQueStatusImg" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Topic"
+        android:id="@+id/listOueTopic"
+        android:layout_toEndOf="@id/listQueSubjectImg"
+        android:layout_below="@id/QuestionText"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_toStartOf="@+id/listQueDate"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="So this is how our description text should look, its not pretty asdfasdfasdfasdfasdf"
+        android:id="@+id/listQueDescription"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_below="@+id/listOueTopic"
+        android:layout_alignStart="@+id/listQueSubjectImg" />
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/listQueStatusImg"
+        android:src="@drawable/android"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/listQueDate" />
+
+</RelativeLayout>

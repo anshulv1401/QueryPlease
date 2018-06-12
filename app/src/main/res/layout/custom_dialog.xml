@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/maleImgView"
+        android:src="@drawable/male"
+        android:layout_below="@+id/textView13"
+        android:layout_alignLeft="@id/textView13"
+        android:layout_margin="15dp"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/femaleImgView"
+        android:src="@drawable/female"
+        android:layout_below="@id/textView13"
+        android:layout_alignRight="@id/textView13"
+        android:layout_margin="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Male"
+        android:id="@+id/maleTextView"
+        android:layout_below="@id/maleImgView"
+        android:layout_alignEnd="@id/maleImgView"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Female"
+        android:id="@+id/femaleTextView"
+        android:layout_below="@+id/femaleImgView"
+        android:layout_alignEnd="@id/femaleImgView"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Choose your gender"
+        android:id="@+id/textView13"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
